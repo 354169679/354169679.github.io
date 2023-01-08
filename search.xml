@@ -4,11 +4,96 @@
   
     
     <entry>
+      <title>随笔三</title>
+      <link href="/2023/01/08/%E9%9A%8F%E7%AC%94%E4%B8%89/"/>
+      <url>/2023/01/08/%E9%9A%8F%E7%AC%94%E4%B8%89/</url>
+      
+        <content type="html"><![CDATA[<p style="text-indent:2em">新的一年，希望各位都能有个新的开始。我在新年的第一天就风尘仆仆地赶回老家，参加完高中同学的婚礼后，又急匆匆地回到了武汉。<p style="text-indent:2em">路途虽然遥远，但也饶有风趣：坐地铁头次被一群老外围着问江汉路站台的位置在哪，却羞于表达而紧张到答非所问，导致自己开始怀疑自己的英语水平，好像白学了那么多年英语；久别重逢的好基友预定好了酒店后，翻来覆去睡不着，便不停地闲聊过去的往事，直至凌晨才睡；被新郎点上台抢新娘子的手捧花，却没有抢到。<p style="text-indent:2em">老同学们那熟悉的面孔让我回忆起高中的很多陈年旧事，以及他们与我一起经历过的快乐和痛苦。眼看着身边的同学一个个都步入婚姻的殿堂，他们在婚礼舞台上那掩饰不住的笑容，心里也不由得为他们感到高兴，这也意味着大家结婚后都会更倾向于过好各自的小日子，相聚机会也会越来越少，待到重逢之时又是何年何月?或许这也是常态吧，毕竟每个人都要为生活四处奔波，天下也没有不散的宴席。再转过头来看看自己，想要亲身体验到这种幸福感还有很远的路要走。 <blockquote><p>有人住高楼，有人在深沟，有人光万丈，有人一身锈，世人万千种，浮云莫去求，斯人若彩虹，遇上方知有。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日常 </tag>
+            
+            <tag> 感慨 </tag>
+            
+            <tag> 婚姻 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随笔二</title>
+      <link href="/2023/01/08/%E9%9A%8F%E7%AC%94%E4%BA%8C/"/>
+      <url>/2023/01/08/%E9%9A%8F%E7%AC%94%E4%BA%8C/</url>
+      
+        <content type="html"><![CDATA[<p style="text-indent:2em">前段时间，突然阳了，便请假回家休息了大概一个星期左右。在家休息的这段时间让我看清了同事之间所谓的人间情怀。<p style="text-indent:2em">平日里那些跟我无所不谈，关系融洽的同事们，没有一个对我的身体情况以及恢复的如何感兴趣，领导也在督促着我要完成该要完成的任务，貌似对我阳了的事情并不怎么关心。我一直寻思着，平时我都待这些同事不薄，都会尽力地想着与他们好好去相处，但在我遇到困难之时，一个个就想要疏远我，但是想想就觉得没啥，因为想的太多又过于自作多情。只不过是对于周围同事的这种为人处世态度，感到诧异。<p style="text-indent:2em">生而为人，我们之间多多少少需要些“人情味”，毕竟不是冷血动物，能认识就是一种缘分。<blockquote><p>在最艰难的时刻我们要建立人与人之间的连接，相互扶持相互鼓励。</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 日常 </tag>
+            
+            <tag> 人情世故 </tag>
+            
+            <tag> 感慨 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>C++ Primer学习笔记-基础类型</title>
+      <link href="/2023/01/08/C-Primer%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
+      <url>/2023/01/08/C-Primer%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/</url>
+      
+        <content type="html"><![CDATA[<ul><li><p>算数类型有整形，浮点型，字符，布尔类型。</p></li><li><p>空类型，即void。</p></li><li><p>其中，整形和浮点型包含带符号和不带符号（unsigned）。带符号的类型可以表示正数、负数和0，无符号类型只能表示0和正数。</p></li><li><p>正常的情况下，字符类型一般占一个字节，即8Bits，unsigne char一般表示整型0-255的范围，char一般表示为-127-127的范围。</p></li><li><p>类型转换包括隐式转换和显式转换两种，这里先讲隐式转换，当中比较重要的一点就是，当我们给一个无符号类型的变量赋一个超出它本身范围的值时，其结果会变成初始值对该无符号类型范围最大值取模后的余数。例如，-1赋给unsigned时，-1%256&#x3D;255，结果为255。</p><p>举一些比较有意思的例子：</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> u=<span class="number">10</span>;</span><br><span class="line"><span class="type">int</span> i=<span class="number">-42</span>;</span><br><span class="line">std::cout&lt;&lt;u+i&lt;&lt;std::endl; </span><br></pre></td></tr></table></figure><p>当上面的u与i相加时，i会转变成无符号类型unsigned int，把-42赋给无符号类型整数，然后再与u相加，得出一个非预期的结果，具体需要看机器是多少位的。</p><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="type">unsigned</span> i=<span class="number">10</span>;i&gt;=<span class="number">0</span>;--i)</span><br><span class="line">  std::cout&lt;&lt;i&lt;&lt;std::endl; </span><br></pre></td></tr></table></figure><p>上面的结果是：循环永远不会结束。因为在循环到-1时，unsigned没法表示-1，因此会将-1转换成unsigned int类型，得出一个很大的整数，最后导致死循环。 </p><blockquote><p>切勿混用带符号类型和无符号类型。</p></blockquote></li><li><p>字面值常量表示的是值的本身，如42表示整型字面量，true表示bool型字面量</p></li><li><p>整型字面量可以用十进制，八进制（0开头），十六进制（0x或0X开头）来表示，如42，042，0xF等。 </p></li><li><p>字符串字面值结尾会带’\0’来标识字符串结束，单引号用于表示单个字符，双引号用于表示单个字符串。</p></li></ul><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> c = <span class="string">&#x27;a&#x27;</span>;</span><br><span class="line">std::string str = <span class="string">&quot;a string&quot;</span>;</span><br><span class="line">std::cout &lt;&lt; <span class="string">&quot;a long string string string&quot;</span></span><br><span class="line">  <span class="string">&quot;string a string &quot;</span> &lt;&lt; std::endl;</span><br><span class="line"><span class="comment">//遇到过长的字符串时，可以分多行来进行表示</span></span><br><span class="line"><span class="comment">//上述表示&quot;a long string string string string a string&quot;这单独的一个字符串</span></span><br></pre></td></tr></table></figure><ul><li>转义字符用于表示一类特殊含义的字符和一类特殊标点符号的字符（？等）</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> C/C++ </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程语言 </tag>
+            
+            <tag> C++ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>随笔一</title>
       <link href="/2023/01/07/%E9%9A%8F%E7%AC%94%E4%B8%80/"/>
       <url>/2023/01/07/%E9%9A%8F%E7%AC%94%E4%B8%80/</url>
       
-        <content type="html"><![CDATA[<p>​前段时间在B站写专栏，发现了一个很头疼的问题：每篇文章在提交审核通过后只允许修改三次（吐血），我就想着找另外一些方式来记录博客。</p><span id="more"></span><p>​在跟同学谈到写博客方面时，同学说我为啥不自己搭建一个私人博客。我想了想，哎，也对啊，无非就是又要去学一些新技术而已，问题不大，于是抱着试一试的想法，查阅了相关资料。</p><p>​网上的大佬很给了很多相关建议，大致有两种方案：要么就是自己买个服务器和域名，自己写页面和后台逻辑，要么就是用GitHub来搭。前一种的思路倒是很寻常的一种方式，但是后面一种我是压根听都没听说过，于是乎，我又查阅了一些相关的案例，发现用GitHub搭建起来几乎0成本，而且学习成本也不大。头一次接触到Hexo框架，对我来说，这玩意真是个新奇事儿。啪的一下很快啊，我就开始着手修改相关配置文件和学了一些markdown的用法，就有了现在这样的Bolg。</p><p>​建这个Bolg基本没有用到什么非常有含金量的技术，主要就是改改yaml配置文件（我压根就没学过yaml，学了也忘了），而且公司的事情很多，加上我只想多写些博客，专注于博客的内容，而不是真跑去重新捡回学过的前端知识，那样太费劲了！俺暂时还不想花那么多时间学这些用不上的知识，毕竟我的主攻方向是Linux开发方面。</p><p>好了，也就唠嗑唠到这了，也感谢那些在我B站博客下面学习的小伙伴们在支持着我（虽然只有每篇文章评价只十几的浏览量），想要看我的文章，请后续继续关注本站，本站也不停地完善中，后面会越来越花里胡哨（滑稽）。</p>]]></content>
+        <content type="html"><![CDATA[<p style="text-indent:2em">前段时间在B站写专栏，发现了一个很头疼的问题：每篇文章在提交审核通过后只允许修改三次（吐血），我就想着找另外一些方式来记录博客。<p style="text-indent:2em">在跟同学谈到写博客方面时，同学说我为啥不自己搭建一个私人博客。我想了想，哎，也对啊，无非就是又要去学一些新技术而已，问题不大，于是抱着试一试的想法，查阅了相关资料。<p style="text-indent:2em">网上的大佬很给了很多相关建议，大致有两种方案：要么就是自己买个服务器和域名，自己写页面和后台逻辑，要么就是用GitHub来搭。前一种的思路倒是很寻常的一种方式，但是后面一种我是压根听都没听说过，于是乎，我又查阅了一些相关的案例，发现用GitHub搭建起来几乎0成本，而且学习成本也不大。头一次接触到Hexo框架，对我来说，这玩意真是个新奇事儿。啪的一下很快啊，我就开始着手修改相关配置文件和学了一些markdown的用法，就有了现在这样的Bolg。<p style="text-indent:2em">建这个Bolg基本没有用到什么非常有含金量的技术，主要就是改改yaml配置文件（我压根就没学过yaml，学了也忘了），而且公司的事情很多，加上我只想多写些博客，专注于博客的内容，而不是真跑去重新捡回学过的前端知识，那样太费劲了！俺暂时还不想花那么多时间学这些用不上的知识，毕竟我的主攻方向是Linux开发方面。<p style="text-indent:2em">好了，也就唠嗑唠到这了，也感谢那些在我B站博客下面学习的小伙伴们在支持着我（虽然只有每篇文章评价只十几的浏览量），想要看我的文章，请后续继续关注本站，本站也不停地完善中，后面会越来越花里胡哨（滑稽）。]]></content>
       
       
       <categories>
