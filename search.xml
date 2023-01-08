@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>汇编语言学习笔记-基础知识</title>
+      <link href="/2023/01/08/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <url>/2023/01/08/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+      
+        <content type="html"><![CDATA[<h2 id="机器语言"><a href="#机器语言" class="headerlink" title="机器语言"></a>机器语言</h2><p style="text-indent:2em">机器语言是指一种由0和1组成的机器指令，计算机只“认识”这种语言，像自然语言，编程语言等，计算机是不认识的，我们所写的代码最后都会被转化位计算机指令，即机器语言。<p style="text-indent:2em">负责运行这些指令的，就是我们电脑的CPU（又叫做中央处理单元，叫法真高级）啦。<h2 id="汇编语言的产生"><a href="#汇编语言的产生" class="headerlink" title="汇编语言的产生"></a>汇编语言的产生</h2><p style="text-indent:2em">汇编指令呢，通俗的来讲，他就是另一种计算机指令，只不过啊，这种指令需要通过“中间层”来转换一下，这个中间层叫编译器，用于把汇编指令转换成计算机所能读懂的机器指令，而且为什么要用汇编指令？因为汇编指令比机器指令更好理解，机器指令全是由1和0表示的，那读着太累了，也很不方便。]]></content>
+      
+      
+      <categories>
+          
+          <category> 汇编语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 汇编 </tag>
+            
+            <tag> 编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C++ Primer学习笔记-基础类型</title>
       <link href="/2023/01/08/C-Primer%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/"/>
       <url>/2023/01/08/C-Primer%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%9F%BA%E7%A1%80%E7%B1%BB%E5%9E%8B/</url>
