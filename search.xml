@@ -4,11 +4,65 @@
   
     
     <entry>
+      <title>汇编语言学习笔记-包含多个段的程序</title>
+      <link href="/2023/01/10/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%8C%85%E5%90%AB%E5%A4%9A%E4%B8%AA%E6%AE%B5%E7%9A%84%E7%A8%8B%E5%BA%8F/"/>
+      <url>/2023/01/10/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E5%8C%85%E5%90%AB%E5%A4%9A%E4%B8%AA%E6%AE%B5%E7%9A%84%E7%A8%8B%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<p>先看一段代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">dw 0123h,0456h,01bch,0222h</span><br><span class="line"></span><br><span class="line">movbx,0</span><br><span class="line">mov ax,0</span><br><span class="line"></span><br><span class="line">mov cx,4</span><br><span class="line"></span><br><span class="line">s:add ax,cs:[bx]</span><br><span class="line">addbx,2</span><br><span class="line"></span><br><span class="line">loop s</span><br><span class="line"></span><br><span class="line">mov ax,4c00h</span><br><span class="line">int 21h</span><br></pre></td></tr></table></figure><p>dw（define word）为定义字型数据的意思，用于在程序的数据段空间中定义一系列的数据。程序中的意思就是，在系统为该程序分配的内存空间代码段中，定义0123h,0456h,01bch,0222h这些数据。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 汇编语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> 汇编 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>汇编语言学习笔记-第一个程序</title>
+      <link href="/2023/01/10/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/"/>
+      <url>/2023/01/10/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%AC%AC%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="汇编源代码到可执行程序的过程"><a href="#汇编源代码到可执行程序的过程" class="headerlink" title="汇编源代码到可执行程序的过程"></a>汇编源代码到可执行程序的过程</h2><p>文本编辑好源程序，然后编译链接，再执行。</p><p>分析一段源程序</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">assume cs:codesg</span><br><span class="line"></span><br><span class="line">codesg segment</span><br><span class="line">mov ax,0123h</span><br><span class="line">mov bx,1343h</span><br><span class="line">add ax,bx</span><br><span class="line">add ax,ax</span><br><span class="line"></span><br><span class="line">mov ax,ax</span><br><span class="line">int 21H</span><br><span class="line"></span><br><span class="line">codesg ends</span><br><span class="line">end</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 汇编语言 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编程 </tag>
+            
+            <tag> 汇编 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>随笔四</title>
       <link href="/2023/01/08/%E9%9A%8F%E7%AC%94%E5%9B%9B/"/>
       <url>/2023/01/08/%E9%9A%8F%E7%AC%94%E5%9B%9B/</url>
       
-        <content type="html"><![CDATA[<p style="text-indent:2em">我正在听着未闻花名的主题曲secret base~，写着随笔。<p style="text-indent:2em">不知为啥，最近情绪时而高涨时而低落，很不稳定。<p style="text-indent:2em">但是听下歌之后就会好很多，恢复到比较平静的状态。<p style="text-indent:2em">这曲儿听着听着，会让我莫名其妙想到自己高中和大学的点点滴滴，回想着自己大学追了好多好多动漫，看了好多好多电影，认识了好多好多人，但是如今已是物是人非，我也没有当初像那时一般，有着稚嫩和单纯的思维，一切都变了，很难回到过去的样子，因为或许对我来说，有些情况下，好像过去的我反而比现在的我要强很多倍，但是，有些方面，现在的我又有着一些以前的我所没有的能力。<p style="text-indent:2em">回忆往往是美好的，也是痛苦的。]]></content>
+        <content type="html"><![CDATA[<p style="text-indent:2em">我正在听着未闻花名的主题曲secret base~，写着随笔。<p style="text-indent:2em">不知为啥，最近情绪时而高涨时而低落，很不稳定。<p style="text-indent:2em">但是听下歌之后就会好很多，恢复到比较平静的状态。<p style="text-indent:2em">这曲儿听着听着，会让我莫名其妙想到自己高中和大学的点点滴滴，回想着自己大学追了好多好多动漫，看了好多好多电影，认识了好多好多人，但是如今已是物是人非，我也没有当初像那时一般，有着稚嫩和单纯的思维，一切都变了，很难回到过去的样子，因为或许对我来说，有些情况下，好像过去的我反而比现在的我要强很多倍，但是，有些方面，现在的我又有着一些以前的我所没有的能力。<blockquote><p>回忆往往是美好的，也是痛苦的。</p></blockquote>]]></content>
       
       
       <categories>
@@ -40,7 +94,7 @@
       
       <categories>
           
-          <category> 汇编语 </category>
+          <category> 汇编语言 </category>
           
       </categories>
       
