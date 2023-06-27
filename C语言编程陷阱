@@ -1,0 +1,6 @@
+1.为什么函数形参列表为空必须要加void
+eg:int fun(void);
+答：在无void情况下（int fun()）,调用fun函数并赋于实参不会报错，能够正常编译，降低代码可维护性和可读性。
+eg:int fun()
+int a;
+fun(a);//success complie
